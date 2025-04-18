@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Your own todo</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center"
+  >
+    <!-- Translucent and blurred form -->
+    <div
+      class="container mx-auto p-6 max-w-lg bg-white bg-opacity-30 backdrop-blur-md rounded-lg shadow-lg"
+    >
+      <h1 class="text-3xl font-semibold text-center text-gray-800 mb-6">
+        To-Do List
+      </h1>
+
+      <div class="input-container flex items-center space-x-2 mb-4">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Add a new task..."
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          id="add-task-btn"
+          class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          Add Task
+        </button>
+      </div>
+
+      <ul id="todo-list" class="space-y-3">
+        <!-- Task items will appear here -->
+      </ul>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
